@@ -1,7 +1,7 @@
 from base_scraper import BaseScraper
 from bs4 import BeautifulSoup
 import logging
-import re
+
 from datetime import datetime, timedelta
 import urllib.parse
 from selenium import webdriver
