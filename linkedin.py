@@ -215,4 +215,9 @@ class InternshalaSScraper(BaseScraper):
         elif any(keyword in job_role_lower or keyword in skills_text 
                  for keyword in ['data', 'analyst', 'machine learning', 'ai']):
             return 'Data Science'
-        
+        elif any(keyword in job_role_lower or keyword in skills_text 
+                 for keyword in ['design', 'ui', 'ux', 'graphic']):
+            return 'Design'
+    
+        else:
+            return 'Other'
