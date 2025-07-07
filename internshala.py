@@ -201,7 +201,7 @@ class InternshalaSScraper(BaseScraper):
             return job_data
             
         except Exception as e:
-            logging.error(f"Error parsing Internshala job: {e}")
+            logging.error(f"Error: {e}")
             return None
     
     def _categorize_job(self, job_role, skills):
